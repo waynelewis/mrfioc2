@@ -1127,6 +1127,49 @@ OBJECT_BEGIN2(EVRMRM, EVR)
     }
 OBJECT_END(EVRMRM)
 
+void EVRMRM::getRegisterOffset(unsigned region,
+                               unsigned offset,
+                               volatile void** addr,
+                               access_t* perm)
+{
+    if(region!=0)
+        throw std::runtime_error("Only REGION=0 supported");
+
+    if(offset&3)
+        throw std::runtime_error("OFFSET must be aligned to 4 bytes");
+
+    if(offset>=baselen)
+        throw std::runtime_error("OFFSET is out of range");
+
+    access_t access = ReadWrite;
+
+    switch(offset) {
+    // control registers which should not be written without special handling
+    case U32_Control:
+    case U32_IRQFlag:
+    case U32_IRQEnable:
+    case U32_PCI_MIE:
+    case U32_DataBufCtrl:
+    case U32_SPIDData:
+    case U32_SPIDCtrl:
+        access = Read;
+        break;
+    // read sensitive registers
+    case U32_EvtFIFOSec:
+    case U32_EvtFIFOEvt:
+    case U32_EvtFIFOCode:
+        access = NoAccess;
+        break;
+    }
+
+    if(access==NoAccess)
+        throw std::runtime_error("Raw Register access not permitted");
+    if(addr)
+        *addr = base + offset;
+    if(perm)
+        *perm = access;
+}
+
 
 void
 EVRMRM::enableIRQ(void)

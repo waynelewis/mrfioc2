@@ -12,9 +12,6 @@
 #ifndef EVRMRML_H_INC
 #define EVRMRML_H_INC
 
-#include "evr/evr.h"
-#include "mrf/spi.h"
-
 #include <string>
 #include <vector>
 #include <set>
@@ -28,6 +25,10 @@
 #include <epicsMessageQueue.h>
 #include <callback.h>
 #include <epicsMutex.h>
+
+#include "evr/evr.h"
+#include "mrf/spi.h"
+#include "mrf/rawreg.h"
 
 #include "drvemInput.h"
 #include "drvemOutput.h"
@@ -81,6 +82,7 @@ struct epicsShareClass eventCode {
  */
 class epicsShareClass EVRMRM : public mrf::ObjectInst<EVRMRM, EVR>,
                                       mrf::SPIInterface,
+                               public mrf::RawRegisterAccess,
                                public TimeStampSource
 {
     typedef mrf::ObjectInst<EVRMRM, EVR> base_t;
@@ -207,6 +209,11 @@ public:
 
     epicsUInt32 timeSrc() const;
     void setTimeSrc(epicsUInt32 mode);
+
+    virtual void getRegisterOffset(unsigned region,
+                                   unsigned offset,
+                                   volatile void** addr,
+                                   access_t* perm);
 
     static void isr(EVRMRM *evr, bool pci);
     static void isr_pci(void*);
