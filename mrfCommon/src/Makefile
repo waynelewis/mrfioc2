@@ -20,6 +20,7 @@ INC += mrfcsr.h
 
 INC += mrf/databuf.h
 INC += mrf/object.h
+INC += mrf/rawreg.h
 
 INC += mrf/version.h
 
@@ -68,6 +69,7 @@ mrfCommon_SRCS += devObjCommand.cpp
 mrfCommon_SRCS += devObjWf.cpp
 mrfCommon_SRCS += devMbboDirectSoft.c
 mrfCommon_SRCS += devlutstring.cpp
+mrfCommon_SRCS += devrawreg.cpp
 mrfCommon_SRCS += databuf.cpp
 mrfCommon_SRCS += mrfCommon.cpp
 mrfCommon_SRCS += spi.cpp
