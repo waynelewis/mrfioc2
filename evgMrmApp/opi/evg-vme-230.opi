@@ -119,7 +119,7 @@
       <selector_type>0</selector_type>
       <show_units>true</show_units>
       <style>0</style>
-      <text>${TITLE}</text>
+      <text>$TITLE-</text>
       <tooltip>$(pv_name)
 $(pv_value)</tooltip>
       <transparent>false</transparent>
@@ -204,7 +204,7 @@ $(pv_value)</tooltip>
       <name>Text Input</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(SYS){$(D)-EvtClk}RFFreq-SP</pv_name>
+      <pv_name>$(SYS)$(D)EvtClk-RFFreq-SP</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
@@ -301,7 +301,7 @@ $(pv_value)</tooltip>
       <name>Text Input</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(SYS){$(D)-EvtClk}RFDiv-SP</pv_name>
+      <pv_name>$(SYS)$(D)EvtClk-RFDiv-SP</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
@@ -398,7 +398,7 @@ $(pv_value)</tooltip>
       <name>Text Input</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(SYS){$(D)-EvtClk}FracSynFreq-SP</pv_name>
+      <pv_name>$(SYS)$(D)EvtClk-FracSynFreq-SP</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
@@ -486,7 +486,7 @@ $(pv_value)</tooltip>
       <height>25</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)-EvtClk}Source-Sel</pv_name>
+      <pv_name>$(SYS)$(D)EvtClk-Source-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -614,7 +614,7 @@ $(pv_value)</tooltip>
       <name>Text Update</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(SYS){$(D)-EvtClk}Frequency-RB</pv_name>
+      <pv_name>$(SYS)$(D)EvtClk-Frequency-RB</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
@@ -1232,7 +1232,7 @@ $(pv_value)</tooltip>
       <height>25</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)}1ppsInp-Sel</pv_name>
+      <pv_name>$(SYS)$(D)1ppsInp-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -1277,7 +1277,7 @@ $(pv_value)</tooltip>
       <image></image>
       <name>Action Button</name>
       <push_action_index>0</push_action_index>
-      <pv_name>$(SYS){$(D)}SyncTimestamp-Cmd</pv_name>
+      <pv_name>$(SYS)$(D)SyncTimestamp-Cmd</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -1326,7 +1326,7 @@ $(pv_value)</tooltip>
       <name>Text Update</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(SYS){$(D)}Timestamp-RB</pv_name>
+      <pv_name>$(SYS)$(D)Timestamp-RB</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
@@ -1415,7 +1415,7 @@ $(pv_value)</tooltip>
       <height>16</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)}DbusStatus-RB.SCAN</pv_name>
+      <pv_name>$(SYS)$(D)DbusStatus-RB.SCAN</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -1514,7 +1514,7 @@ $(pv_value)</tooltip>
       <on_color>
         <color red="0" green="255" blue="0" />
       </on_color>
-      <pv_name>$(SYS){$(D)}DbusStatus-RB</pv_name>
+      <pv_name>$(SYS)$(D)DbusStatus-RB</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -1838,7 +1838,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)-Dbus:0}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus0-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -1882,7 +1882,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)-Dbus:1}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus1-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -1926,7 +1926,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)-Dbus:2}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus2-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -1970,7 +1970,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)-Dbus:3}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus3-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -2014,7 +2014,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)-Dbus:4}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus4-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -2058,7 +2058,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button_1</name>
-      <pv_name>$(SYS){$(D)-Dbus:5}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus5-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -2102,7 +2102,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button_2</name>
-      <pv_name>$(SYS){$(D)-Dbus:6}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus6-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -2146,7 +2146,7 @@ $(pv_value)</tooltip>
       <height>17</height>
       <label></label>
       <name>Menu Button_3</name>
-      <pv_name>$(SYS){$(D)-Dbus:7}Src-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Dbus7-Src-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
@@ -2689,7 +2689,7 @@ $(pv_value)</tooltip>
       <name>Text Input</name>
       <precision>0</precision>
       <precision_from_pv>true</precision_from_pv>
-      <pv_name>$(SYS){$(D)-SoftEvt}EvtCode-SP</pv_name>
+      <pv_name>$(SYS)$(D)SoftEvt-EvtCode-SP</pv_name>
       <pv_value />
       <rotation_angle>0.0</rotation_angle>
       <rules />
@@ -2800,7 +2800,7 @@ $(pv_value)</tooltip>
           <path>evg-seq.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
-            <SS>SoftSeq:0</SS>
+            <SS>SoftSeq0</SS>
           </macros>
           <mode>1</mode>
           <description>SoftSeq 0</description>
@@ -2809,7 +2809,7 @@ $(pv_value)</tooltip>
           <path>evg-seq.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
-            <SS>SoftSeq:1</SS>
+            <SS>SoftSeq1</SS>
           </macros>
           <mode>1</mode>
           <description>SoftSeq 1</description>
@@ -2818,7 +2818,7 @@ $(pv_value)</tooltip>
           <path>evg-seq.opi</path>
           <macros>
             <include_parent_macros>true</include_parent_macros>
-            <SS>SoftSeq:2</SS>
+            <SS>SoftSeq2</SS>
           </macros>
           <mode>1</mode>
           <description>SoftSeq 2</description>
@@ -2932,7 +2932,7 @@ $(pv_value)</tooltip>
       <height>25</height>
       <label></label>
       <name>Menu Button</name>
-      <pv_name>$(SYS){$(D)}Enable-Sel</pv_name>
+      <pv_name>$(SYS)$(D)Enable-Sel</pv_name>
       <pv_value />
       <rules />
       <scale_options>
