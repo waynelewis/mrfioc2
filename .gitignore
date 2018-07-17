@@ -8,6 +8,11 @@ O.*/
 html/
 rtf
 *.local
+data/
+*.sw?
+.*.sw?
+.st_embla*.cmd
+check_updates.sh
 
 envPaths
 .project
