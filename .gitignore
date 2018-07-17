@@ -12,7 +12,7 @@ data/
 *.sw?
 .*.sw?
 .st_embla*.cmd
-check_updates.sh
+require.lock-*
 
 envPaths
 .project
@@ -24,3 +24,4 @@ envPaths
 *.creator.user
 *.files
 *.includes
+
