@@ -50,8 +50,8 @@ epicsEnvSet("FUNC" "Reset PS")
 #dbLoadRecords("evg-cpci.db",    "DEVICE=$(EVG), SYS=$(SYS),                                 TrigEvt7-EvtCode-SP=$(HBEVT), Mxc2-Frequency-SP=$(HBFREQ), Mxc2-TrigSrc7-SP=1, TrigEvt0-EvtCode-SP=$(HWEVT), Mxc0-Frequency-SP=$(EVTFREQ), Mxc0-TrigSrc0-SP=1, SoftEvt-Enable-Sel=1")
 #dbLoadRecords("evg-vme-230.db", "DEVICE=$(EVG), SYS=$(SYS), EvtClk-FracSyncFreq-SP=88.0525, TrigEvt7-EvtCode-SP=$(HBEVT), Mxc2-Frequency-SP=$(HBFREQ), Mxc2-TrigSrc7-SP=1, TrigEvt0-EvtCode-SP=$(HWEVT), Mxc0-Frequency-SP=$(EVTFREQ), Mxc0-TrigSrc0-SP=1, SoftEvt-Enable-Sel=1")
 # dbLoadRecords("evg-vme-230.db", "DEVICE=$(EVG), SYS=$(SYS), EvtClk-FracSyncFreq-SP=88.0525, TrigEvt7-EvtCode-SP=$(HBEVT), Mxc2-Frequency-SP=$(HBFREQ), Mxc2-TrigSrc7-SP=1, TrigEvt0-EvtCode-SP=$(HWEVT), Mxc0-Frequency-SP=$(EVTFREQ), Mxc0-TrigSrc0-SP=1, TrigEvt1-EvtCode-SP=$(JCEVT), Mxc1-Frequency-SP=$(JCFREQ), Mxc1-TrigSrc1-SP=1, SoftEvt-Enable-Sel=1")
- dbLoadRecords("evg-vme-230.db", "DEVICE=$(EVG), SYS=$(SYS), EvtClk-FracSyncFreq-SP=124.916, TrigEvt7-EvtCode-SP=$(HBEVT), Mxc2-Frequency-SP=$(HBFREQ), Mxc2-TrigSrc7-SP=1, TrigEvt0-EvtCode-SP=$(HWEVT), Mxc0-Frequency-SP=$(EVTFREQ), Mxc0-TrigSrc0-SP=1, TrigEvt1-EvtCode-SP=$(JCEVT), Mxc1-Frequency-SP=$(JCFREQ), Mxc1-TrigSrc1-SP=1, SoftEvt-Enable-Sel=1")
-
+#dbLoadRecords("evg-vme-230.db", "DEVICE=$(EVG), SYS=$(SYS), EvtClk-FracSyncFreq-SP=124.916, TrigEvt7-EvtCode-SP=$(HBEVT), Mxc2-Frequency-SP=$(HBFREQ), Mxc2-TrigSrc7-SP=1, TrigEvt0-EvtCode-SP=$(HWEVT), Mxc0-Frequency-SP=$(EVTFREQ), Mxc0-TrigSrc0-SP=1, TrigEvt1-EvtCode-SP=$(JCEVT), Mxc1-Frequency-SP=$(JCFREQ), Mxc1-TrigSrc1-SP=1, SoftEvt-Enable-Sel=1")
+ dbLoadRecords("evg-vme-230.db", "DEVICE=$(EVG), SYS=$(SYS), EvtClk-FracSynFreq-SP=88.0519, TrigEvt7-EvtCode-SP=$(HBEVT), Mxc2-Frequency-SP=$(HBFREQ), Mxc2-TrigSrc7-SP=1, TrigEvt0-EvtCode-SP=$(HWEVT), Mxc0-Frequency-SP=$(EVTFREQ), Mxc0-TrigSrc0-SP=1, TrigEvt1-EvtCode-SP=$(JCEVT), Mxc1-Frequency-SP=$(JCFREQ), Mxc1-TrigSrc1-SP=1, SoftEvt-Enable-Sel=1")
 
 
 ### Timestamp Test Sequence #####
